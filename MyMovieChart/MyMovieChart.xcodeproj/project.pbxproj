@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4B2A50652C225D840014EDDD /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A50642C225D840014EDDD /* MovieCell.swift */; };
+		4B94E19B2C2D01AC0010C4A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B94E19A2C2D01AC0010C4A5 /* DetailViewController.swift */; };
 		4B9D1C2A2C1BDA7500C2E4BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D1C292C1BDA7500C2E4BF /* AppDelegate.swift */; };
 		4B9D1C2C2C1BDA7500C2E4BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D1C2B2C1BDA7500C2E4BF /* SceneDelegate.swift */; };
 		4B9D1C312C1BDA7500C2E4BF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4B9D1C302C1BDA7500C2E4BF /* Base */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4B2A50642C225D840014EDDD /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		4B94E19A2C2D01AC0010C4A5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4B9D1C262C1BDA7500C2E4BF /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9D1C292C1BDA7500C2E4BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B9D1C2B2C1BDA7500C2E4BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				4B9D1C3D2C1BDE6200C2E4BF /* ListViewController.swift */,
 				4B2A50642C225D840014EDDD /* MovieCell.swift */,
 				4B9D1C2F2C1BDA7500C2E4BF /* Main.storyboard */,
+				4B94E19A2C2D01AC0010C4A5 /* DetailViewController.swift */,
 				4B9D1C3F2C1C1EE200C2E4BF /* MovieVO.swift */,
 				4B9D1C322C1BDA7600C2E4BF /* Assets.xcassets */,
 				4B9D1C342C1BDA7600C2E4BF /* LaunchScreen.storyboard */,
@@ -167,6 +170,7 @@
 				4B9D1C2A2C1BDA7500C2E4BF /* AppDelegate.swift in Sources */,
 				4B9D1C3E2C1BDE6200C2E4BF /* ListViewController.swift in Sources */,
 				4B9D1C2C2C1BDA7500C2E4BF /* SceneDelegate.swift in Sources */,
+				4B94E19B2C2D01AC0010C4A5 /* DetailViewController.swift in Sources */,
 				4B2A50652C225D840014EDDD /* MovieCell.swift in Sources */,
 				4B9D1C402C1C1EE200C2E4BF /* MovieVO.swift in Sources */,
 			);
