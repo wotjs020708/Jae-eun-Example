@@ -62,4 +62,8 @@ extension DetailViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         self.spinner.startAnimating() // 인디게이터 뷰의 에니메이션 추가
     }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.spinner.stopAnimating() // 인디케이터 뷰의 애니메이션 중단
+    }
 }
