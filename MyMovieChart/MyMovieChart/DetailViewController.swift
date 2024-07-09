@@ -59,5 +59,7 @@ class DetailViewController: UIViewController {
 }
 // MARK: - WKNavigationDelegate 프로토콜 구현
 extension DetailViewController: WKNavigationDelegate {
-    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        self.spinner.startAnimating() // 인디게이터 뷰의 에니메이션 추가
+    }
 }
