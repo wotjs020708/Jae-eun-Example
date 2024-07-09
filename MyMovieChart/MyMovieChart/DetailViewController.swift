@@ -70,4 +70,20 @@ extension DetailViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: any Error) {
         self.spinner.stopAnimating() // 인디케이터 뷰의 애니메이션 중지
     }
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+        self.spinner.stopAnimating() // 인디케이터 뷰의 애니메이션을 중지
+        
+        // 경고창 형식으로 오류 메시지를 표시해준다
+        let alert = UIAlertController(title: "오류",
+                                      message: "상세페이지를 읽어오지 못했습니다.",
+                                      preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "확인", style: .cancel) { (_) in
+            // 이전 화면으로 되돌려 보낸다.
+            _ = self.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(cancelAction)
+        self.present(alert, animated: false, completion: nil)
+    }
 }
