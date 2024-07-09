@@ -87,3 +87,17 @@ extension DetailViewController: WKNavigationDelegate {
         self.present(alert, animated: false, completion: nil)
     }
 }
+
+// MARK: - 심플한 경고창 함수 정의용 익스텐션
+
+extension UIViewController {
+    func alert(_ message: String, onClick: (() -> Void)? = nil) {
+        let controller = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: "OK", style: .cancel) { (_) in
+            onClick?()
+        })
+        DispatchQueue.main.async {
+            self.present(controller, animated: false)
+        }
+    }
+}
