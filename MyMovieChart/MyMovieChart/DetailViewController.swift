@@ -9,10 +9,14 @@ import UIKit
 import WebKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet var wv:WKWebView!
     var mvo: MovieVO! // 목록 화면에서 전달하는 영화 정보를 받을 변수
     
     override func viewDidLoad() {
+        // WKNavigationDelegate의 델리게이트 객체를 지정
+        self.wv.navigationDelegate = self
         NSLog("linkurl = \(self.mvo.detail!), title=\(self.mvo.title!)")
         
         // 내비게이션 바의 타이틀에 영화명을 출력한다.
@@ -52,4 +56,8 @@ class DetailViewController: UIViewController {
             
         }
     }
+}
+// MARK: - WKNavigationDelegate 프로토콜 구현
+extension DetailViewController: WKNavigationDelegate {
+    
 }
