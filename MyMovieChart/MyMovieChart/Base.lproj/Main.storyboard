@@ -80,7 +80,7 @@
                                     <outlet property="rating" destination="rZJ-ep-g7T" id="33M-Q2-3h4"/>
                                     <outlet property="thumbnail" destination="n2e-7A-4jx" id="5n1-da-a5U"/>
                                     <outlet property="title" destination="5eS-kL-IL7" id="oCn-zh-WLT"/>
-                                    <segue destination="6QC-JN-qKJ" kind="show" id="Ca7-HV-Ru1"/>
+                                    <segue destination="6QC-JN-qKJ" kind="show" identifier="segue_detail" id="Ca7-HV-Ru1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
